@@ -14,7 +14,7 @@ The Results:
 ### Part II
 Part II of the project focuses on optimizing the computation aspect of disarming the mines. Whenever a rover detects a mine, it generates a unique serial number using the Python uuid library, which is then hashed using the SHA-256 function with a PIN prefix. The program checks whether the resulting hash has a prefix of six leading zeros, and if so, disarms the mine. The multiprocessing module is used to achieve true parallelism since the threading module is limited by the GIL in Python. 
 
-The results for both parallel and sequential attempts are shown below:
+The results for both sequential and parallel attempts are shown below, respectively:
 
 ![](Picture2_1.png)
 
